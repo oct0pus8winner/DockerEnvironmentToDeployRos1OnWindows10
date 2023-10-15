@@ -18,6 +18,7 @@ run next commands
 ```
 $docker compoes up -d
 ```
+First time u compose this packages, it may take 30 min...sry
 
 Then, the terminal generate a container named ros1.
 
