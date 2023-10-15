@@ -25,8 +25,8 @@ RUN curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | apt
     && apt-get autoremove \
     && rm -rf /var/lib/apt/lists/*
 
+# なんで通ってるかわからん，えらーはいてほしい
 RUN echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc source ~/.bashrc
-
 
 RUN apt-get update \
     && apt-get install -y\
@@ -38,6 +38,7 @@ RUN apt-get update \
 
 RUN rosdep init 
 RUN rosdep update
+
 
 WORKDIR /app/
 
