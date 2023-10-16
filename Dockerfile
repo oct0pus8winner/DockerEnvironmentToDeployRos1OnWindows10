@@ -26,7 +26,8 @@ RUN curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | apt
     && rm -rf /var/lib/apt/lists/*
 
 # なんで通ってるかわからん，えらーはいてほしい
-RUN echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc source ~/.bashrc
+RUN echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc 
+RUN  ["/bin/bash", "-c", "source ~/.bashrc"]
 
 RUN apt-get update \
     && apt-get install -y\
