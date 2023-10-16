@@ -1,6 +1,8 @@
 # DockerEnvironmentToDeployRos1OnWindows10
 For generating container from dockerfile to run roscore, rosrun, and rviz.
 
+After generating this repository, I thought that you should use image of ros:noetic-desktop-full...
+
 # My Environment
 
 - CPU : Intel(R) Core(TM) i9-9900k CPU @ 3.60GHz
